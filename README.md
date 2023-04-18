@@ -276,4 +276,47 @@ Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:mohamedashraf206/versionControl.git
-   fe160dd..d3e6f0d  master -> maste
+   fe160dd..d3e6f0d  master -> master
+   
+   
+   
+   --------xxxxxx-------
+   to delete dev from remote 
+   mashraf@localhost version_control]$ git push origin :dev
+To github.com:mohamedashraf206/versionControl.git
+ - [deleted]         dev
+-------
+to delete from local 
+[mashraf@localhost version_control]$ git branch -d dev
+Deleted branch dev (was fe160dd).
+-----------------------------------------------------------------------------------
+how to checkout another branch without commit
+changes ????
+-->> using stach -->> git stach 
+
+-----------------xxxxxxxxxxxx-----------
+-->> Create an annotated tag with tagname (v1.7) .
+● Push it to the remote repository.
+
+
+git tag -a v1.0 -m "myFirstTag is created v1.7 "
+[mashraf@localhost version_control]$ git push --tags
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 925 bytes | 925.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To github.com:mohamedashraf206/versionControl.git
+ * [new tag]         v1.7 -> v1.7
+ 
+ 
+ -->> how to list tags. 
+ -----git tag 
+ ----------------
+ -->> how to delete tag locally and remotely
+ -- locally -->> git tag -d v1.7
+ -- remotely -->> git push origin --delete v1.7
+ 
+ -----------
